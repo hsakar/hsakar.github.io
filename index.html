@@ -1,5 +1,645 @@
 <html>
   <title>Hatice's Website</title>
-<body>
-  <p>
+
+  
+
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    transition-duration:0.5s;}
+ 
+    /* photoset focused image background */
+.tmblr-lightbox {
+    background-color:transparent !important;}
+.vignette {
+    z-index:99998! important;
+    opacity:.75 !important;
+    background-color:{color:background} !important;
+    background-image:none !important;}
+.tmblr-lightbox .lightbox-image {
+    z-index:99999! important;
+    border-radius:0px !important;
+    background:{color:background} !important;
+    box-shadow:0px 0px 0px 30px {color:background} !important;}
+.tmblr-lightbox .lightbox-caption {
+    z-index:99999! important;
+    font-family:consolas !important;
+    font-size:10px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: {color:posts title} !important;
+    text-shadow: 0 4px 30px {color:background} !important;}
+ 
+    /* video posts */
+.caption #youtube_iframe, .caption iframe {margin:5px 0px; max-width:100%;}
+ 
+    /* audio posts */
+#audio-pic {
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:2px;
+    border-radius:3px;
+    width:135px; height:135px;
+    background: url('{image:Default Audio Pic}');
+    background-size:cover;}
+#info-container {
+    display:inline-block;
+    vertical-align:middle;
+    text-align:left;
+    font-size:8px; line-height:15px;
+    width:355px;
+    text-transform:uppercase;
+    letter-spacing:1px;}
+#info-container li {
+    display:block;
+    border-radius:3px;
+    padding:4px 7px;
+    margin:0px; margin-top:4px;
+    background:{color:Posts 2nd BG};}
+.posts .audio_player {
+    max-width:355px; max-height:27px;
+    margin:0px; border-radius:3px;
+    background:{color:Audio Player};
+    {block:IfMonochromePhotos}
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);{/block:IfMonochromePhotos}
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;}
+.posts:hover .audio_player {
+    {block:IfMonochromePhotos}
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);{/block:IfMonochromePhotos}}
+.tumblr_audio_player {
+    width:355px; opacity:.66;}
+ 
+/* --------------------------- POST-INFO STARS --------------------------- */
+ 
+    /* container */
+#postinfo {
+    margin-top:20px;
+    position:absolute;
+    text-align:center;
+    margin-left:-20px;
+    width:540px; height:40px;}
+ 
+    /* stars */
+#postinfo a {
+    position:absolute;
+    left:50%;
+    text-decoration:none;
+    display:block;
+    border-radius:50%;
+    background:{color:Post Stars};
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;}
+#postinfo a:hover {
+    background:{color:Post Stars Hover};}
+ 
+    /* individual stars */
+#fact1 {
+    margin-left:-105px; top:20px;
+    width:4px; height:4px;
+    box-shadow: 0px 0px 0px 1px transparent,
+    0px 0px 4px {color:Post Stars Glow};}
+#fact1:hover {
+    box-shadow: 0px 0px 0px 1px {color:Post Stars Hover},
+    0px 0px 4px {color:Post Stars Hover Glow};}
+ 
+#fact2 {
+    margin-left:-58px; top:14px;
+    width:5px; height:5px;
+    box-shadow: 0px 0px 0px 1px transparent,
+    0px 0px 5px {color:Post Stars Glow};}
+#fact2:hover {
+    box-shadow: 0px 0px 0px 1px {color:Post Stars Hover},
+    0px 0px 5px {color:Post Stars Hover Glow};}
+ 
+#fact3 {
+    margin-left:-30px; top:16px;
+    width:7px; height:7px;
+    box-shadow: 0px 0px 0px 1px transparent,
+    0px 0px 7px {color:Post Stars Glow};}
+#fact3:hover {
+    box-shadow: 0px 0px 0px 1px {color:Post Stars Hover},
+    0px 0px 7px {color:Post Stars Hover Glow};}
+ 
+#fact4 {
+    margin-left:11px; top:25px;
+    width:4px; height:4px;
+    box-shadow: 0px 0px 0px 1px transparent,
+    0px 0px 4px {color:Post Stars Glow};}
+#fact4:hover {
+    box-shadow: 0px 0px 0px 1px {color:Post Stars Hover},
+    0px 0px 4px {color:Post Stars Hover Glow};}
+ 
+#fact5 {
+    margin-left:74px; top:25px;
+    width:4px; height:4px;
+    box-shadow: 0px 0px 0px 1px transparent,
+    0px 0px 4px {color:Post Stars Glow};}
+#fact5:hover {
+    box-shadow: 0px 0px 0px 1px {color:Post Stars Hover},
+    0px 0px 4px {color:Post Stars Hover Glow};}
+ 
+#fact6 {
+    margin-left:99px; top:14px;
+    width:6px; height:6px;
+    box-shadow: 0px 0px 0px 1px transparent,
+    0px 0px 6px {color:Post Stars Glow};}
+#fact6:hover {
+    box-shadow: 0px 0px 0px 1px {color:Post Stars Hover},
+    0px 0px 4px {color:Post Stars Hover Glow};}
+ 
+    /* connectors */
+.connector {
+    opacity:0;
+    position:absolute;
+    left:50%; z-index:-1;
+    height:1px;
+    background:{color:Post Stars Connectors};
+    box-shadow:-100px 0px 0px 0px {color:background} inset;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;}
+.posts:hover .connector {
+    opacity:1;
+    box-shadow:0px 0px 0px 0px {color:background} inset;}
+ 
+#connect1 {
+    width:50px;
+    margin-left:-104px; top:19px;
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);}
+#connect2 {
+    width:70px;
+    margin-left:-55px; top:21px;
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    transform: rotate(9deg);
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;}
+#connect3 {
+    width:90px;
+    margin-left:13px; top:21px;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -ms-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;}
+ 
+/* --------------------------- POST-INFO TEXT --------------------------- */
+#postending {
+    border-radius:3px;
+    padding:10px;
+    width:500px;
+    padding:10px;
+    margin:15px 0px -10px -10px;
+    background: {color:Postending BG};
+    text-align:center;
+    border-radius:1px;
+    margin-top:15px;
+    text-transform:uppercase;
+    font-family:Calibri;
+    font-size:8px;
+    letter-spacing:1px;
+    color: {color:Postending Text};}
+#postending a {
+    box-shadow:none;
+    color:{color:Postending Links};}
+#postending a:hover {
+    color:{color:Postending Links Hover};}
+ 
+/* ---------------------------- PERMALINK -------------------------------- */
+ 
+    /* permalink position */
+#permalink {
+    background:; /* if you want the post-notes to have a non-transparent bg */
+    margin-top: -80px; margin-left: -50px;
+    width: 500px;
+    padding: 20px;}
+ 
+    /* post notes container */
+#notescontainer {
+    width: 500px;
+    max-height:600px;
+    overflow: auto;
+    line-height:14px;
+    text-transform:uppercase;
+    font-family:Calibri;
+    font-size:8px;
+    letter-spacing:1px;
+    text-align:left;
+    color:{color:Permalink Text};}
+#notescontainer a {
+    box-shadow:none;
+    font-weight:bold;
+    text-decoration:none;
+    color:{color:Permalink Links};}
+#notescontainer a:hover {
+    color:{color:Permalink Links Hover};}
+#notescontainer blockquote {
+    margin-top:3px;
+    margin-bottom:3px;
+    background:{color:Permalink Blockquote BG};
+    border-left:30px solid {color:background};
+    border-right:30px solid {color:background};}
+ 
+    /* permalink etc */
+.notes img {
+    display:none;
+    {block:IfFadePhotos}opacity:0.7;{/block:IfFadePhotos}
+    {block:IfMonochromePhotos}-webkit-filter: grayscale(100%);{/block:IfMonochromePhotos}
+    width: 10px;
+    position: relative;
+      transition: all 0.5s linear;}
+ol.notes, .notes li {
+    width: 100%;
+    text-align:center;
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px}
+.notes li:hover img {
+    {block:IfFadePhotos}opacity:1;{/block:IfFadePhotos}
+    {block:IfMonochromePhotos}-webkit-filter: grayscale(0%);{/block:IfMonochromePhotos}
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;}
+ 
+    /* permalink scrollbar */
+#permalink ::-webkit-scrollbar {
+    height:2px; width:2px;
+    background: transparent;}
+#permalink ::-webkit-scrollbar-thumb {
+    background: {color:Permalink Scroll Thumb};
+    border:none;
+    border-radius: 1px;}
+ 
+</style>
+<body class="{select:Cursor Style}">
+ 
+ 
+<!-- gliding constellations 2/2
+     created by jnicol: https://github.com/jnicol/particleground -->
+<script type="text/javascript" src="http://static.tumblr.com/p0knose/9Ibndqi11/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://static.tumblr.com/p0knose/Tfkndqi4e/jquery.particleground.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#stars').particleground({
+            minSpeedX:.025,
+            maxSpeedX:.025,
+            minSpeedY:.025,
+            maxSpeedY:.025,
+            directionX:"center", // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+            directionY:"center", // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+            density:1e3, // How many particles will be generated: one particle every n pixels
+            dotColor: '{color:Constellation Stars}', // star color
+            lineColor: '{color:Constellation Connectors}', // connector color
+            particleRadius:1.5, // Dot size
+            lineWidth:0.5, // dot connector size
+            curvedLines:!1,
+            proximity:25, // How close two dots need to be before they join
+            parallax:!1, // If stars 'stretch' towards mouse
+            parallaxMultiplier:5 // The lower the number, the more extreme the parallax effect
+        });
+        });
+    </script>
+ 
+<!-------------------------------- CURSOR ---------------------------------->
+<style type="text/css">
+    .default-cursor {cursor:default;}
+    .default-cursor a, .default-cursor a:hover {cursor:pointer;}
+ 
+    .crosshair-cursor {cursor:crosshair;}
+    .crosshair-cursor a, .crosshair-cursor a:hover {cursor:crosshair;}
+ 
+    .custom-cursor {cursor: url({image:Custom Cursor}), auto;}
+    .custom-cursor a, .custom-cursor a:hover{cursor:url({image:Custom Cursor Links}), auto;}
+</style>
+ 
+<!-- Custom cursors don't show up on empty spaces, but this fixes that -->
+<div style="position:fixed; top:0px; left:0px; width:100%; height:100%; z-index: -99999999999999;"></div>
+ 
+<!-------------------------- CREDIT; DON'T REMOVE -------------------------->
+<a href="http://nyctothemes.tumblr.com/" title="© nyctothemes" id="credit">
+    <l class="fa fa-star"></l>
+</a>
+ 
+<!-------------------------------- SIDEBAR --------------------------------->
+ 
+<div id="stars"></div>
+ 
+<div id="side">
+    <div id="quote">{text:Side Phrase}</div>
+ 
+    <div id="description">
+        <!-- vv trim the description into a circle shape vv -->
+        <div class="leftdescspace" style="width:53px;"></div>
+        <div class="rightdescspace" style="width:53px;"></div>
+        <div class="leftdescspace" style="width:35px;"></div>
+        <div class="rightdescspace" style="width:35px;"></div>
+        <div class="leftdescspace" style="width:25px;"></div>
+        <div class="rightdescspace" style="width:25px;"></div>
+        <div class="leftdescspace" style="width:17px;"></div>
+        <div class="rightdescspace" style="width:17px;"></div>
+        <div class="leftdescspace" style="width:11px;"></div>
+        <div class="rightdescspace" style="width:11px;"></div>
+        <div class="leftdescspace" style="width:8px;"></div>
+        <div class="rightdescspace" style="width:8px;"></div>
+        <div class="leftdescspace" style="width:6px;"></div>
+        <div class="rightdescspace" style="width:6px;"></div>
+        <div class="leftdescspace" style="width:6px;"></div>
+        <div class="rightdescspace" style="width:6px;"></div>
+        <div class="leftdescspace" style="width:7px;"></div>
+        <div class="rightdescspace" style="width:7px;"></div>
+        <div class="leftdescspace" style="width:9px;"></div>
+        <div class="rightdescspace" style="width:9px;"></div>
+        <div class="leftdescspace" style="width:12px;"></div>
+        <div class="rightdescspace" style="width:12px;"></div>
+        <div class="leftdescspace" style="width:20px;"></div>
+        <div class="rightdescspace" style="width:20px;"></div>
+        <div class="leftdescspace" style="width:30px;"></div>
+        <div class="rightdescspace" style="width:30px;"></div>
+        <div class="leftdescspace" style="width:44px;"></div>
+        <div class="rightdescspace" style="width:44px;"></div>
+        <div class="leftdescspace" style="width:73px;"></div>
+        <div class="rightdescspace" style="width:73px;"></div>
+        <br>
+        {description}</p>
+</div>
+ 
+    <!-- sidebar links -->
+    <div id="sidelinks">
+        <div id="linkbundle">
+            <a href="/" id="link1"></a>
+            <div id="linktitle">Entrance</div>
+        </div>
+       
+        <div id="linkbundle">
+            <a href="/ask" id="link2"></a>
+            <div id="linktitle">Wonders</div>
+        </div>
+       
+        <div id="linkbundle">
+            <a href="/archive" id="link3"></a>
+            <div id="linktitle">Memories</div>
+        </div>
+       
+        <div id="linkbundle">
+            <a href="{text:link 1 URL}" id="link4"></a>
+            <div id="linktitle">{text:link 1 hover}</div>
+        </div>
+       
+        <div id="linkbundle">
+            <a href="{text:link 2 URL}" id="link5"></a>
+            <div id="linktitle">{text:link 2 hover}</div>
+        </div>
+       
+        <div id="linkbundle">
+            <a href="{text:link 3 URL}" id="link6"></a>
+            <div id="linktitle">{text:link 3 hover}</div>
+        </div>
+       
+    </div>
+ 
+</div> <!-- ending div tag for "side" -->
+ 
+    <!-- Page navigation -->
+{block:Pagination}<div id="pagination">
+    {block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}<div class="active">◀</div>{block:PreviousPage}</a>{/block:PreviousPage}
+        world <b>{CurrentPage}</b> of <b>{TotalPages}</b>
+    {block:NextPage}<a href="{NextPage}">{/block:NextPage}<div class="active">▶</div>{block:NextPage}</a>{/block:NextPage}
+</div>{/block:Pagination}
+ 
+<!--------------------------------- POSTS ---------------------------------->
+ 
+<div id="entries-holder">
+<div id="entries">
+{block:posts}
+ 
+<div class="posts">
+ 
+    <!-- text posts -->
+{block:Text}
+    {block:Title}<h1>{Title}</h1>{/block:Title}
+    <div class="caption">{Body}</div>
+{/block:Text}
+ 
+    <!-- link posts -->
+{block:Link}
+    {block:Thumbnail}<center>
+        <a href="{Thumbnail-HighRes}">
+            <img src="{Thumbnail}" class="photo-posts" style="margin-bottom:5px; border-radius:3px">
+        </a>
+    </center>{/block:Thumbnail}
+    <div class="link-posts"><h1><a href="{URL}">
+        {Name}&nbsp;&nbsp;&#8594;</l>
+    </a></h1></div>
+    {block:Description}<div class="caption">
+        <p>{Description}</p>
+    </div>{/block:Description}
+{/block:Link}
+ 
+    <!-- ask posts -->
+{block:Answer}
+    <div class="ask-posts">
+        <img src="{AskerPortraitURL-64}">
+    <div class="question">
+        <h2>{Asker} {text:Ask Verb}:</h2> {Question}
+    </div></div><br>
+        <div id="caption">{Answer}</div>
+{/block:Answer}
+ 
+    <!-- quote posts -->
+{block:Quote}
+    <h2 class="quote-posts">
+        <l class="fa fa-quote-left"></l>
+        <div class="quote">{Quote}</div>
+        <l class="fa fa-quote-right"></l>
+    </h2>
+    <div style="text-align:right; margin-right:20px">
+        {block:Source}<b>- {Source}</b>{/block:Source}
+    </div>
+{/block:Quote}
+ 
+    <!-- chat posts -->
+{block:Chat}
+    {block:Title}<h1>{Title}</h1>{/block:Title}
+    <ul class="chat">{block:Lines}
+        <li class="user_{UserNumber}">{block:Label}<span class="person">{Label}</span>{/block:Label} {Line}</li>
+    {/block:Lines}</ul>
+{/block:Chat}
+ 
+    <!-- photo posts -->
+{block:Photo}
+    <center>
+    {block:HighRes}<a href="{PhotoURL-HighRes}">{/block:HighRes}<img src="{PhotoURL-500}" class="photo-posts"/>{block:HighRes}</a>{/block:HighRes}
+    </center>
+    {block:Caption}<br><div class="caption">{Caption}</div>{/block:Caption}{/block:Photo}
+ 
+{block:Photoset}
+    <center>
+    {Photoset-500}
+    </center>
+    {block:Caption}<br><div class="caption">{Caption}</div>{/block:Caption}{/block:Photoset}
+ 
+    <!-- video post -->
+{block:Video}
+    {Video-500}
+    {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+{/block:Video}
+ 
+    <!-- audio post -->
+{block:Audio}
+    <!--image-->
+    {block:IndexPage}<a href="{Permalink}">{/block:IndexPage}<div id="audio-pic" {block:AlbumArt}style="background:none"{/block:AlbumArt}>
+        {block:AlbumArt}<img src="{AlbumArtURL}">{/block:AlbumArt}
+    </div>{block:IndexPage}</a>{/block:IndexPage}
+<div id="info-container">
+    <!--player-->
+    {block:ifDarkAudioPlayer}{AudioPlayerBlack}{/block:ifDarkAudioPlayer}
+    {block:ifNotDarkAudioPlayer}{AudioPlayerWhite}{/block:ifNotDarkAudioPlayer}   <!--info-->
+    {block:TrackName}<li><b>Track:</b> {TrackName}</li>{/block:TrackName}
+    {block:Artist}<li><b>Artist:</b> {Artist}</li>{/block:Artist}
+    {block:Album}<li><b>Album:</b> {Album}</li>{/block:Album}
+    {block:PlayCount}<li><b>Plays:</b> {FormattedPlayCount}</li>{/block:PlayCount}
+</div>
+{block:Caption}<div class="caption" style="margin-top:5px;>{Caption}</div>{/block:Caption}{/block:Audio}
+ 
+<!------------------------------ POST ENDING ------------------------------->
+ 
+{block:PermalinkPage}{block:Date}<div id="postending">
+ 
+    <!-- date posted -->
+        <a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{ShortMonth}.{DayOfMonthWithZero}.{ShortYear}</a>
+    <!-- notes counter -->
+    {block:NoteCount}
+        || <a href="#permalink">{NoteCountWithLabel}</a>
+    {/block:NoteCount}
+    <!-- reblogged from -->
+    {block:RebloggedFrom}<br>
+        Via: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+    {/block:RebloggedFrom}
+    <!-- original poster -->
+    {block:ContentSource}
+        || Source: <a href="{SourceURL}">{SourceTitle}</a>
+    {/block:ContentSource}
+    <!-- tags -->
+    {block:HasTags}<br><div style="padding:0px 20px 0px 20px">
+        Tags: {block:Tags}<a href="{TagURL}">{Tag}</a>, {/block:Tags}
+    </div>{/block:HasTags}
+   
+</div>{/block:Date}{/block:PermalinkPage}
+ 
+          <!------------- If Circles for Index Page ------------->
+{block:IfPostendingStarsForIndexpage}
+{block:IndexPage}
+<div id="postinfo">
+ 
+    <!-- date posted -->
+    {block:Date}
+    <a href="{Permalink}" title="{ShortMonth}.{DayOfMonthWithZero}.{ShortYear}" id="fact1"></a>
+    {/block:Date}
+    <!-- notes counter -->
+    {block:NoteCount}
+        <a href="{Permalink}" title="{NoteCountWithLabel}" id="fact2"></a>
+    {/block:NoteCount}
+    <!-- original poster -->
+    {block:ContentSource}
+        <a href="{SourceURL}" title="Source: {SourceTitle}" id="fact3"></a>
+    {/block:ContentSource}
+    <!-- reblogged from -->
+    {block:RebloggedFrom}
+        <a href="{ReblogParentURL}" title="Via: {ReblogParentName}" id="fact4"></a>
+    {/block:RebloggedFrom}
+    <!-- tags -->
+    {block:HasTags}
+        <a href="{Permalink}" title="# {block:Tags}{Tag}, {/block:Tags}" id="fact5"></a>
+    {/block:HasTags}
+    <!-- reblog -->
+        <a href="{ReblogURL}" title="Reblog" id="fact6"></a>
+ 
+    <div class="connector" id="connect1"></div>
+    <div class="connector" id="connect2"></div>
+    <div class="connector" id="connect3"></div>
+ 
+</div>
+{/block:IndexPage}
+{/block:IfPostendingStarsForIndexpage}
+ 
+          <!------------- If NO Circles for Index Page ------------->
+{block:IfNotPostendingStarsForIndexpage}
+{block:IndexPage}
+{block:Date}<div id="postending">
+ 
+    <!-- date posted -->
+        <a href="{Permalink}">{ShortMonth}.{DayOfMonthWithZero}.{ShortYear}</a>
+    <!-- notes counter -->
+    {block:NoteCount}
+        || <a href="{Permalink}">{NoteCountWithLabel}</a>
+    {/block:NoteCount}
+    <!-- reblogged from -->
+    {block:RebloggedFrom}<br>
+        Via: <a href="{ReblogParentURL}">{ReblogParentName}</a>
+    {/block:RebloggedFrom}
+    <!-- original poster -->
+    {block:ContentSource}
+        || Source: <a href="{SourceURL}">{SourceTitle}</a>
+    {/block:ContentSource}
+    <!-- tags -->
+    {block:HasTags}<br><div style="padding:0px 20px 0px 20px">
+        Tags: {block:Tags}<a href="{TagURL}">{Tag}</a>, {/block:Tags}
+    </div>{/block:HasTags}
+ 
+</div>{/block:Date}
+{/block:IndexPage}
+{/block:IfNotPostendingStarsForIndexpage}
+ 
+</div> <!-- ending div tag for "posts" -->
+ 
+{/block:Posts}
+ 
+<!------------------------------- PERMALINK -------------------------------->
+ 
+{block:PostNotes}
+<div id="permalink">
+    <div id="notescontainer">{PostNotes}</div>
+</div>
+{/block:PostNotes}
+ 
+</div> <!-- ending div tag for "entries" -->
+</div> <!-- ending div tag for "entries-holder" -->
+ 
 </body>
+ 
+</html>
+  vertical-align: middle;
+    padding-right: 5px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+
